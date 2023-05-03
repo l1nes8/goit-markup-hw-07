@@ -75,6 +75,7 @@ img{
     margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
+    align-items: center; 
     
     outline: 1px solid tomato;
     
@@ -92,7 +93,9 @@ img{
 @media only screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
-        align-items: center; 
+        
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -575,7 +578,7 @@ img{
 
 /* Phone style */
 .advantage-text {
-    width: 396px;
+    max-width: 396px;
 
     font-weight: 500;
     font-size: 16px;
@@ -587,7 +590,8 @@ img{
 /* Tablet style */
 @media screen and (min-width: 768px) {
     .advantage-text {
-       width: 356px;
+       max-width: 356px;
+       
     }
 }
 
@@ -595,7 +599,7 @@ img{
 @media screen and (min-width: 1158px) {
     .advantage-text {
         font-weight: 400;
-        width: 264px;
+        max-width: 264px;
     }
 }
 
