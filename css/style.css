@@ -309,6 +309,7 @@ img{
 
 /* hero */
 .hero { 
+   /* Секцыя */
     /* Phone style */
     padding-top: 112px;
     padding-bottom: 112px;
@@ -348,6 +349,7 @@ img{
 
 
 .hero-title { 
+    /* Главный текст */
     /* Phone style */
     text-align: center;
     color: var(--white-color);
@@ -483,7 +485,7 @@ img{
 
 
 /* advantage */
-
+/* Секцыя  */
 .advantage {
     /* Phone style */
     padding-top: 96px;
@@ -502,6 +504,7 @@ img{
     }
 }
 
+/* Список */
 /* Phone style */
 .advantage-list {
     display: block;
@@ -525,6 +528,7 @@ img{
     }
 }
 
+/* Листы в списке */
 /* Phone style */
 .advantage-list .item {
     margin-bottom: 72px;
@@ -545,7 +549,7 @@ img{
     }
 }
 
-
+/* Главный текст в листе */
 /* Phone style */ 
 .advantage-title {
     color: var(--primary-text-color);
@@ -569,13 +573,13 @@ img{
 
 @media screen and (min-width: 1158px) {
     .advantage-title {
-    
         font-weight: 500;
         font-size: 16px;
         line-height: 1.2;
     }
 }
 
+/* Второстепенный текст в листе */
 /* Phone style */
 .advantage-text {
     max-width: 396px;
@@ -603,7 +607,7 @@ img{
     }
 }
 
-
+/* Иконки  */
 /* Phone style */  /* Tablet style */
 .icon-advantage {
     display: none;
@@ -623,6 +627,7 @@ img{
     }
 }
 
+/* Отступы иконок */
 /* Desk style */
 @media screen and (min-width: 1158px ){
     .antenna {
