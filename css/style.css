@@ -89,7 +89,6 @@ img{
 }
 
 /* Dekstop style */
-
 @media only screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
