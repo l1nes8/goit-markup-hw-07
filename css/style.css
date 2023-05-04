@@ -512,10 +512,6 @@ img{
 }
 
 /* Tablet style */
-@media screen and (min-width: 768px) {
-    .advantage-list {
-    }
-}
 
 /* Desk style */
 @media screen and (min-width: 1158px) {
@@ -527,9 +523,6 @@ img{
 
 /* Листы в списке */
 /* Phone style */
-.advantage-list .item {
-
-}
 
 /* Tablet style */
 @media screen and (min-width: 768px) {
