@@ -133,8 +133,14 @@ img{
     
     width: 115px;
     line-height: 1.17;
-    margin-right: 76px;
+    margin-right: 120px;
 }   
+
+@media screen and (min-width: 1158px) {
+    .logo-header {
+        margin-right: 76px;
+    } 
+}
 
 .logo-footer {
     color: #4D5AE5;
@@ -201,6 +207,10 @@ img{
 }
 
 
+.nav-main-primary {
+    display: flex;
+    align-items: center;
+}
 
 .nav-main {
     display: flex;
@@ -208,13 +218,31 @@ img{
     gap: 40px;
 }
 
+@media screen and (max-width: 767px) {
+    .nav-main {
+        display: none;
+    }
+}
+
 .nav-main:first-child {
     gap: 0;
 }
 
 .nav-address {
-    display: flex;
-    gap: 40px;
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-address {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .nav-address {
+        display: flex;
+        gap: 40px;
+    } 
 }
 
 .nav-address .link {
@@ -262,7 +290,6 @@ img{
 .link-sm-footer:hover, 
 .link-sm-footer:focus {
     background-color: #31D0AA;
-    
 }
 
 .icons-sm-footer {
@@ -440,7 +467,7 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
     
-    width: 408px;
+    width: 392px;
     min-height: 584px;
     padding: 24px;
 
@@ -449,6 +476,13 @@ img{
     0px 1px 3px rgba(0, 0, 0, 0.12), 
     0px 2px 1px rgba(0, 0, 0, 0.2);
 } 
+
+
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 408px;
+    }
+}
 
 .modal-btn {
     position: absolute;
@@ -1176,5 +1210,175 @@ input[type="checkbox"]:checked + .modal-form-icon-checkbox > .modal-form-icon-ch
 
 .btn-modal:hover, 
 .btn-modal:focus {
+    background-color: var(--hover-and-focus-color);
+}
+
+
+/* Mobile menu */
+
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }
+
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+  }
+
+  @media (min-width: 768px) {
+    .menu-toggle {
+      display: none;
+    }
+  }
+  
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+.menu-toggle-in-open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 24px;
+    width: 24px;
+    margin: 0;
+    padding: 0;
+
+    background-color: transparent;
+    
+    border: 1px solid rgba(46, 47, 66, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.menu-container .menu-toggle-in-open {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: var(--white-color);
+    z-index: 999;
+    overflow: scroll;
+  
+    transform: translateX(100%);
+    transition: transform var(--hover-animation);
+  }
+  
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+  
+
+
+
+.list-mobail a {
+    color: var(--primary-text-color);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.list-mobail li {
+    list-style: none;
+}
+
+.nav-mobail-list {
+    margin-bottom: 284px;
+}
+
+.nav-mobail-address-list {
+    margin-bottom: 48px;
+}
+
+
+
+.mobail-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    fill: var(--primary-text-color);
+}
+
+.mobail-nav-text {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    margin-top: 40px;
+}
+
+.targer-mobail {
+    color: var(--hover-and-focus-color) !important;
+}
+
+.tel-mobail {
+    display: block;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1; 
+    color: #4D5AE5 !important;
+
+    margin-bottom: 40px;
+}
+
+.mail-mobail {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--title-text-color);
+}
+
+.list-sm-mobail {
+    display: flex;
+    gap: 56px;
+    flex-wrap: wrap;
+}
+
+.link-sm-mobail {
+    background-color: #4D5AE5;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 40px;
+    height: 40px;
+
+    transition: background-color var(--hover-animation);
+
+    border-radius: 50%;
+}
+
+
+.link-sm-mobail:hover, 
+.link-sm-mobail:focus {
     background-color: var(--hover-and-focus-color);
 }
