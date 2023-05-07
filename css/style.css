@@ -291,7 +291,7 @@ img{
     .not-flex-footer {
         gap: 72px 24px;
         text-align: left;
-        /* justify-content: center; */
+        /* justify-content: center;  */
     }
 }
 
