@@ -162,8 +162,23 @@ img{
 }   
 
 .webstudio-footer {
-    margin-right: 120px;
+    margin-left: auto;
+    margin-right: auto;
 } 
+
+@media screen and (min-width: 768px) {
+    .webstudio-footer {
+        margin-right: 0;
+        margin-left: 0;
+    } 
+}
+
+
+@media screen and (min-width: 768px) {
+    .webstudio-footer {
+        margin-right: 120px;   
+    } 
+}
 
 /* header */
 
@@ -255,17 +270,57 @@ img{
 
 .footer {
     background-color: #2E2F42;
-    padding: 100px 0;
+    padding: 96px 0;
+}
+
+@media screen and (min-width: 1158px){
+    .footer {
+        padding: 100px 0;
+    }
 }
 
 .not-flex-footer {
-    display: flex;
-    align-items: baseline;
+   display: flex;
+   text-align: center;
+   align-items: center;
+   gap: 72px;
+   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+    .not-flex-footer {
+        gap: 72px 24px;
+        text-align: left;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (min-width: 1158px) {
+    .not-flex-footer {
+        align-items: baseline;
+        gap: 0;
+    }
 }
 
 .social-media-footer {
-    margin-right: 80px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+@media screen and (min-width: 768px) {
+    .social-media-footer {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .social-media-footer {
+        margin-right: 80px;
+    }
+}
+
 
 .list-social-media-footer {
     display: flex;
@@ -551,7 +606,6 @@ img{
 @media screen and (min-width: 1158px) {
     .advantage-list {
         row-gap: 0px;
-        flex-wrap: nowrap;
     }
 }
 
@@ -561,7 +615,7 @@ img{
 /* Tablet style */
 @media screen and (min-width: 768px) {
     .advantage-list .item {
-        width: calc((100% - 48px) / 2);
+        width: calc((100% - 24px) / 2);
     }
 }
 
@@ -701,8 +755,15 @@ img{
 /* Our Team */
 .team {
     background-color: var(--gray-color);
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+@media screen and (min-width: 1158px) {
+    .team {
+        padding-top: 120px;
+        padding-bottom: 120px; 
+    }
 }
 
 .min-resume {
@@ -711,7 +772,10 @@ img{
 
 .img-employees {
     display: flex;
-    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 72px 24px;
+    flex-wrap: wrap;
 }
 
 .list-social-media{
@@ -722,7 +786,7 @@ img{
 
 .img-employees .item {
     background-color: var(--white-color);
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
     0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -770,15 +834,31 @@ img{
  /* Section 4. Clients  */
 
 .clients {
+    padding-top: 96px;
+    padding-bottom: 96px; 
+    
+}
+
+@media screen and (min-width: 1158px) {
+    .clients {
     padding-top: 120px;
     padding-bottom: 120px;
+    }
 }
 
 .list-clients {
     display: flex;
-    gap: 24px;
+    gap: 72px 16px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     list-style: none;
-   
+}
+
+@media screen and (min-width: 768px) {
+    .list-clients {
+        gap: 72px 24px; 
+    }
 }
 
 .link-clients {
@@ -789,12 +869,18 @@ img{
    
     transition: color var(--hover-animation), border-color var(--hover-animation) ;
 
-    width: 168px;
+    width: 190px;
     height: 88px;
 
     border: 1px solid var(--clients-color);
     border-radius: 4px;
     color: var(--clients-color); 
+}
+
+@media screen and (min-width: 768px) {
+    .link-clients {
+        width: 168px;
+    }
 }
 
 .link-clients:hover, 
@@ -811,7 +897,7 @@ img{
 .customers {
     color: var(--primary-text-color);
     
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     text-align: center;
@@ -961,17 +1047,38 @@ img{
 
 /* Form footer*/
 
+
+.footer-form-and-sub {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-form-and-sub {
+        display: block;
+    }
+}
+
 .mail-sub {
    display: flex;
-   gap: 24px;
-   align-items: center;
+   flex-wrap: wrap;
    justify-content: center;
+   gap: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .mail-sub {
+        gap: 24px;
+        align-items: center;
+     }
 }
 
 .input-footer {
     outline: 2px solid transparent;
     
-    width: 264px;
+    width: 100%;
     height: 40px;
 
     padding-left: 16px;
@@ -985,6 +1092,12 @@ img{
     border: 1px solid #FFFFFF;
     border-radius: 4px; 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+@media screen and (min-width: 768px) {
+    .input-footer {
+        width: 264px;
+    }
 }
 
 .btn-form {
