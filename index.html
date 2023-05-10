@@ -381,7 +381,26 @@
         </li>
 
         <li class="item">
-
+          <picture>
+            <source 
+             media="(min-width: 1158px)"
+            srcset="./team/Daniel_all@1x.jpg 1x, ./team/Daniel_all@2x.jpg 2x"
+            type="image/jpg"
+            />
+             <source 
+             media="(min-width: 768px)"
+             srcset="./team/Daniel_all@1x.jpg 1x, ./team/Daniel_all@2x.jpg 2x"
+             type="image/jpg"
+            />
+            <source 
+             media="(max-width: 767px)"
+             srcset="./team/Daniel_all@1x.jpg 1x, ./team/Daniel_all@2x.jpg 2x"
+             type="image/jpg"
+             />
+             <img src="./team/Daniel_all@1x.jpg" alt="Photo" 
+             width="264" 
+            height="260">
+           </picture>
             <div class="min-resume">
             <h3 class="team-name">Daniel Wilson</h3>
             <p class="team-profession">UI Designer</p>
@@ -529,19 +548,18 @@
       <div class="footer-form-and-sub">
         <p class="primary-text-footer">Subscribe</p>
         <form name="footer-form">
-          <label>
+        <label>
          
           <div class="mail-sub">
-          <input type="email" class="input-footer" placeholder="E-mail" name="email-footer-user">
+            <input type="email" class="input-footer" placeholder="E-mail" name="email-footer-user">
 
-          <button type="submit" class="btn-form">Subscribe
-            <svg class="icon-sub" width="24px" height="20px">
-              <use href="./images/icons.svg#icon-telegram"></use>
-            </svg>
-          </button>
-          
+            <button type="submit" class="btn-form">Subscribe
+              <svg class="icon-sub" width="24px" height="20px">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
           </div>
-          </label>
+        </label>
         </form>
       </div>
 
@@ -564,12 +582,12 @@
       <li>
         <a href="./portfolio.html" class="mobail-nav-text">Portfolio</a></li>
       <li>
-        <a href="" class="mobail-nav-text"mobail>Contacts</a></li>
+        <a href="" class="mobail-nav-text" mobail>Contacts</a></li>
     </ul>
 
     <ul class="list-mobail nav-mobail-address-list">
       <li>
-        <a href="tel:+11 (000) 111-11-11" class="tel-mobail">+11 (000) 111-11-11</a></li>
+        <a href="tel:+110001111111" class="tel-mobail">+11 (000) 111-11-11</a></li>
       <li>
         <a href="mailto:info@devstudio.com" class="mail-mobail">info@devstudio.com</a></li>
     </ul>
