@@ -266,6 +266,13 @@ img{
     font-weight: 400; 
 }
 
+@media screen and (min-width:768px){
+    .nav-address .link {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
 
 
 /* footer */
@@ -294,7 +301,7 @@ img{
         gap: 72px 24px;
         text-align: left;
         width: 582px;
-        /* justify-content: center;  */
+        align-items: baseline; 
     }
 }
 
@@ -713,7 +720,7 @@ img{
 @media screen and (min-width: 1158px) {
     .advantage-title {
         font-weight: 500;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 1.2;
     }
 }
@@ -1503,21 +1510,26 @@ input[type="checkbox"]:checked + .modal-form-icon-checkbox > .modal-form-icon-ch
 }
 
 .menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding-left: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: var(--white-color);
-    z-index: 999;
-    overflow: scroll;
-  
-    transform: translateX(100%);
-    transition: transform var(--hover-animation);
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+  padding-top: 40px;
+   padding-bottom: 40px;
+  background-color: var(--white-color);
+  z-index: 999;
+  overflow: scroll;
+
+  transform: translateX(100%);
+   transition: transform var(--hover-animation);
+ }
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
   
   .menu-container.is-open {
     transform: translateX(0);
@@ -1536,8 +1548,8 @@ input[type="checkbox"]:checked + .modal-form-icon-checkbox > .modal-form-icon-ch
     list-style: none;
 }
 
-.nav-mobail-list {
-    margin-bottom: 284px;
+.nav-mobail-list{
+    margin-bottom: auto;
 }
 
 .nav-mobail-address-list {
@@ -1586,7 +1598,7 @@ input[type="checkbox"]:checked + .modal-form-icon-checkbox > .modal-form-icon-ch
 
 .list-sm-mobail {
     display: flex;
-    gap: 56px;
+    gap: calc((100% - 168px) / 4);
     flex-wrap: wrap;
 }
 
